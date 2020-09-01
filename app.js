@@ -25,8 +25,8 @@ function createManager() {
     // console.log("Build your team!")
     inquirer.prompt([
         { name: "name", message: "What is the manager's name?", type: "input" },
-        { name: "email", message: "What is the manager's email?", type: "input" },
         { name: "id", message: "What is the manager's id number?", type: "input" },
+        { name: "email", message: "What is the manager's email?", type: "input" },
         { name: "office_number", message: "What is the manager's office number?", type: "input" }
 
     ]).then(function (response) {
@@ -61,8 +61,8 @@ function createEngineer() {
     // console.log("Build your team!")
     inquirer.prompt([
         { name: "name", message: "What is the engineer's name?", type: "input" },
-        { name: "email", message: "What is the engineer's email?", type: "input" },
         { name: "id", message: "What is the engineer's id number?", type: "input" },
+        { name: "email", message: "What is the engineer's email?", type: "input" },
         { name: "github", message: "What is the engineer's GitHub name?", type: "input" }
 
     ]).then(function (response) {
@@ -115,7 +115,6 @@ function employeeType() {
                 break;
             default:
                 return
-
         }
     })
 }
